@@ -1,0 +1,28 @@
+alias scansubnet="nmap -sn"
+alias editssh="code ~/.ssh/config"
+alias mountssh="sudo sshfs -o allow_other,defer_permissions"
+alias edithosts="code /etc/hosts"
+alias pushkey="ssh-copy-id"
+alias simpleserver="python -m SimpleHTTPServer 8000"
+alias portlisten="nc -l"
+alias home="cd ~/"
+alias repo="cd ~/Repositories"
+alias folderfiletypes="find . -type f | sed 's/.*\.//' | sort | uniq -c"
+alias editcron="env EDITOR=nano crontab -e"
+alias convertkeynew="ssh-keygen -p -o -f id_rsa"
+alias convertkeyold="ssh-keygen -f id_rsa -p"
+alias tlscheck="curl  https://www.howsmyssl.com/a/check | jq"
+alias publicifconfig="curl ifconfig.io"
+alias loadagentkey="ssh-add -K ~/.ssh/id_rsa"
+alias gotousercrons="cd /var/spool/cron"
+alias macosoldfont="defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO"
+alias macosnewfont="defaults write -g CGFontRenderingFontSmoothingDisabled -bool YES"
+alias macoslogout="osascript -e 'tell application \"System Events\" to log out'"
+alias art='php artisan'
+alias macosdnsflush='sudo killall -HUP mDNSResponder'
+alias sudo='sudo '
+alias killDS='find . -name *.DS_Store -type f -delete'
+alias macospoweroff='sudo /sbin/shutdown -h now'
+alias macosupdate="sudo softwareupdate -i -a; brew update; brew upgrade"
+alias cnn="open https://tunein.com/cnn/"
+alias twit="open https://www.youtube.com/watch?v=8_-UiSNf7so"
