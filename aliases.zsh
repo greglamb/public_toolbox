@@ -29,3 +29,4 @@ alias twit="open https://www.youtube.com/watch?v=8_-UiSNf7so"
 alias getalldns="dig any"
 alias getalldnsreally="dig axfr"
 alias home=cd ~/
+alias compare="git diff --no-index"
