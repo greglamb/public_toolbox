@@ -9,4 +9,6 @@ export DOCKER_HOST=localhost:2375
 
 source ~/dotfiles/public_toolbox/base.include.zsh
 
+git config  --global oh-my-zsh.hide-status 1
+
 winhome
