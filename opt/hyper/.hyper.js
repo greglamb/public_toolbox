@@ -99,11 +99,11 @@ module.exports = {
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
 
 // Original 
-//  shell: 'C:\\Windows\\System32\\bash.exe',
-//  shellArgs: ['~','--login', '-c', 'zsh'],
+  shell: 'C:\\Windows\\System32\\bash.exe',
+  shellArgs: ['~','--login', '-c', 'zsh'],
 
-shell: '',
-shellArgs: ["/C", "%userprofile%\\hyperstart.bat"],
+//shell: '',
+//shellArgs: ["/C", "%userprofile%\\hyperstart.bat"],
 
     // for environment variables
     env: {},
