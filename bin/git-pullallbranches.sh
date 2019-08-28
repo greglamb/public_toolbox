@@ -1,6 +1,10 @@
 #!/bin/bash
 git checkout master
-git reset --hard origin/master
-for remote in `git branch -r`; do git branch --track ${remote#origin/} $remote; done
 git fetch --all
-git pull --all
+git reset --hard origin/master
+for branch in $(git branch --all | grep '^\s*remotes' | egrep --invert-match '(:?HEAD|master)$'); do
+	git branch --track "${branch##*/}" "$branch"
+	git checkout "${branch##*/}"
+	git pull
+done
+git checkout master
