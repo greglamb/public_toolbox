@@ -32,3 +32,4 @@ alias home=cd ~/
 alias compare="git diff --no-index"
 alias functions="print -l ${(ok)functions}"
 alias runtest="npm test -- --verbose --runInBand --runTestsByPath"
+alias sudosu="sudo su -c "script /dev/null" --login"
