@@ -5,7 +5,7 @@ alias cmd="$WINHOME/bin/cmd.exe"
 alias code="cmd /c code"
 alias winhome="cd $WINHOME"
 
-export DOCKER_HOST=localhost:2375
+export DOCKER_HOST=tcp://localhost:2375
 
 source ~/dotfiles/public_toolbox/base.include.zsh
 
