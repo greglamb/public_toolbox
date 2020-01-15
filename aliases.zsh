@@ -31,3 +31,4 @@ alias getalldnsreally="dig axfr"
 alias home=cd ~/
 alias compare="git diff --no-index"
 alias functions="print -l ${(ok)functions}"
+alias localkubectl='kubectl --kubeconfig ~/.kube/local_config'
